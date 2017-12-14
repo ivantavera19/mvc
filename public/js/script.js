@@ -1,0 +1,1 @@
+//alert("hola mundo soy un alert del archivo script");

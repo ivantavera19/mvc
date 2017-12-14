@@ -1,1 +1,12 @@
-<h1>pie de pagina</h1>
+		</div>
+	</div>
+
+	<div class="footer">
+		<footer>
+			hola soy el footer
+		</footer>
+	</div>
+
+</body>
+
+</html>

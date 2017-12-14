@@ -10,7 +10,7 @@ class Usuarios extends Controller{
 		$Loader = new LoadModel("UsuariosModel");
 		$UsuariosModel = new UsuariosModel();
 		$Usuarios = $UsuariosModel->getUsuarios();
-		$ViewUsuarios = new Views("Usuarios/usuarios.php", compact("Usuarios"));
+		$ViewUsuarios = new Layout("Usuarios/usuarios.php", compact("Usuarios"));
 	}
 
 }

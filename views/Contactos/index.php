@@ -1,5 +1,5 @@
 <?php 
 
-print_r($data);
+echo url_base();
 
 ?>

@@ -5,6 +5,8 @@
 	require("core/Views.php");
 	require("core/Model.php");
 	require("core/LoadModel.php");
+	require("core/Layout.php");
+	require("core/Functions.php");
 
 	if ($_GET && isset($_GET["controller"])) {
 		$default_controller = $_GET["controller"];
