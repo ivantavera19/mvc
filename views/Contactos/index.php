@@ -1,5 +1,3 @@
-<?php 
+<h1>Contactos</h1>
 
-echo url_base();
-
-?>
+<?php print_r(url_base()); ?>
