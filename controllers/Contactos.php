@@ -2,15 +2,18 @@
 
 class Contactos extends Controller{
 
-	function __construct(){
-		parent::__construct();
-	}
-
 	public function index(){
-		$Loader = new LoadModel("ContactosModel");
+		$Model = new LoadModel("ContactosModel");
+		$Model = new LoadModel("TelefonosModel");
 		$ContactosModel = new ContactosModel();
-		$Contactos = $ContactosModel->getContactos();
-		$ViewContactos = new Layout("Contactos/index.php", compact("Contactos"));
+		$TelefonosModel = new TelefonosModel();
+		$contactos = $ContactosModel->getContactos();
+		$telefonos = [];
+		foreach ($contactos as $contacto) {
+			$telefonos[$contacto["id_contacto"]] = $TelefonosModel->getTelefonos($contacto["id_contacto"]);
+		}
+		//print_r($telefonos);
+		$Layout = new Layout("Contactos/index.php", compact("contactos", "telefonos"));
 	}
 }
 

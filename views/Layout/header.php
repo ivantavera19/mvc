@@ -15,13 +15,15 @@
 </head>
 <body>
 
-	<header>
-		<ul class="nav nav-pills">
-			<li role="presentation"><a href="#">Inicio</a></li>
-			<li role="presentation"><a href="#">Contactos</a></li>
-			<li role="presentation"><a href="#">Ayuda</a></li>
-		</ul>
-	</header>
+	<div class="container">
+		<header>
+			<ul class="nav nav-pills">
+				<li role="presentation"><a href="#">Inicio</a></li>
+				<li role="presentation"><a href="#">Contactos</a></li>
+				<li role="presentation"><a href="#">Ayuda</a></li>
+			</ul>
+		</header>
+	</div>
 
 	<div class="main">
 		<div class="container" style="background-color: #fff">
