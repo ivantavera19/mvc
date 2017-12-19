@@ -12,8 +12,8 @@ class Contactos extends Controller{
 		foreach ($contactos as $contacto) {
 			$telefonos[$contacto["id_contacto"]] = $TelefonosModel->getTelefonos($contacto["id_contacto"]);
 		}
-		//print_r($telefonos);
-		$Layout = new Layout("Contactos/index.php", compact("contactos", "telefonos"));
+		print_r($telefonos);
+		$Layout = new Layout("Contactos/index.php", compact("contactos"));
 	}
 }
 

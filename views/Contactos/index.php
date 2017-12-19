@@ -1,3 +1,5 @@
-<h1>Contactos</h1>
+<?php 
 
-<?php print_r($data); ?>
+print_r($data);
+
+ ?>
