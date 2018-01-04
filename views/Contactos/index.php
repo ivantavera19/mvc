@@ -1,7 +1,7 @@
 <div class="col-lg-8 col-lg-offset-2">
 	<center><h2><label class="label label-info">Agenda telefonica</label></h2></center>
 
-	<form method="post" action="Contactos/setContacto">
+	<form method="post" action="<?php echo url_base();?>mvc/Contactos/setContacto">
 		<div class="form-group col-lg-5">
 			<label>Nombres</label>
 			<input class="form-control" type="text" name="nombres" placeholder="Nombres" required="true">
@@ -18,7 +18,7 @@
 		<div class="clearfix"></div>
 		<div class="form-group col-lg-10">
 			<label>Telefonos</label>
-			<textarea class="form-control" cols="5" placeholder="Telefonos" required="true"></textarea>
+			<textarea class="form-control" cols="6" name="telefonos" placeholder="Telefonos" required="true"></textarea>
 		</div>
 		<div class="clearfix"></div>
 		<div class="btn-group col-lg-10">

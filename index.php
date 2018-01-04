@@ -8,6 +8,10 @@
 	require("core/Layout.php");
 	require("core/Functions.php");
 
+	foreach ($libraries as $librarie) {
+		require("libraries/$librarie".".php");
+	}
+
 	if ($_GET && isset($_GET["controller"])) {
 		$default_controller = $_GET["controller"];
 		if (file_exists("controllers/".$default_controller.".php")) {
